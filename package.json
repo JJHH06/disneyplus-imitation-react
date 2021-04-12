@@ -1,6 +1,6 @@
 {
   "devDependencies": {
-    "@babel/preset-env": "^7.13.12",
+    "@babel/preset-env": "^7.13.15",
     "@babel/preset-react": "^7.13.13",
     "babel-core": "^6.26.3",
     "babel-loader": "^8.2.2",
@@ -20,11 +20,12 @@
     "webpack-dev-server": "^3.11.2",
     "webpack-merge": "^5.7.3"
   },
-  "name": "MemoryGameReact",
+  "name": "disney-plus-imitation-react",
   "version": "1.0.0",
   "private": "true",
   "main": "index.js",
   "dependencies": {
+    "@babel/core": "^7.13.15",
     "clean-webpack-plugin": "^3.0.0",
     "jquery": "^3.5.1",
     "popper.js": "^1.16.1",
@@ -37,14 +38,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/JJHH06/MemoryGameReact.git"
+    "url": "git+https://github.com/JJHH06/disneyplus-imitation-react.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/JJHH06/MemoryGameReact/issues"
+    "url": "https://github.com/JJHH06/disneyplus-imitation-react/issues"
   },
-  "homepage": "https://github.com/JJHH06/MemoryGameReact#readme",
+  "homepage": "https://github.com/JJHH06/disneyplus-imitation-react#readme",
   "description": ""
 }

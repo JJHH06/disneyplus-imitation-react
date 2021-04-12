@@ -1,1 +1,22 @@
+body {
+    background-position: center;
+    background-image: url(https://prod-static.disney-plus.net/us-west-2/disneyPlus/app/builds/56a609b9f8106aaed76cd596053f79316378f2e2/node_modules/dss-junglebook/components/themes/images/background.png);
+    background-attachment: fixed;
+    background-size: 100%;
+}
+
+.bg-black {
+    background-color: #080B12 !important;
+}
+
+.game{
+    color: aliceblue;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 @import "~bootstrap/scss/bootstrap";
+
