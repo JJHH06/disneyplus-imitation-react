@@ -17,6 +17,33 @@ body {
     justify-content: center;
     align-items: center;
 }
+.nav-icon{
+    color: rgb(249, 249, 249) !important;
+    height: 24px; 
+    min-width: 24px;
+    width: 24px; 
+    z-index: auto;
+    fill:aliceblue;
+}
+.text-option-navbar{
+    margin-left: 8px;
+    padding-bottom: 2.5px;
+}
+
+.nav-text-icon{
+    margin-inline: 15px;
+} 
+
+.navbar-brand{
+    margin-inline: 25px;
+}
+
+.nav-text-icon:hover .text-option-navbar{
+    border-bottom: 2px solid white;
+    }
+
+
+
 
 @import "~bootstrap/scss/bootstrap";
 
