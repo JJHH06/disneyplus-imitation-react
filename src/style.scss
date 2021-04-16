@@ -135,7 +135,30 @@ body {
 }
 .videos-grid{
     padding-top: 20px !important;
+    margin-bottom: 10px !important;
+    
 }
+
+.video-image{
+    max-width: 100%;
+    border-radius: 5% !important;
+    border: 3px solid #00000060;
+}
+
+.video-image-container:hover{
+    cursor: pointer;
+    transform: scale(1.09);
+    .video-image{
+        border: 3px solid #D2D8E8;
+    }
+    
+}
+.video-image-container{
+    background: linear-gradient(rgb(48, 50, 62), rgb(30, 31, 42));
+    border-radius: 5%;
+    background-size: cover;
+}
+
 // .contenedor-carousel-banner{
 //     border: 5px solid transparent;
 // }
