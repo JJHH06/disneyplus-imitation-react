@@ -4,6 +4,7 @@ import NavBar from './components/NavBar';
 import BannerSlider from './components/BannerSlider';
 import CategoryDivision from './components/CategoryDivision/CategoryDivision.js';
 import SimpleSlider from './components/ContentChooser/SimpleSlider';
+import Footer from './components/Footer'
 
 
 function Scene(){
@@ -16,6 +17,7 @@ function Scene(){
             <CategoryDivision/>
             <SimpleSlider/>
             </main>
+            <Footer/>
             
         </div>
 
