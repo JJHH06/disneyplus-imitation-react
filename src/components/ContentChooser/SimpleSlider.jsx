@@ -1,5 +1,5 @@
-import React, { Component } from "react";
-import Slider from "react-slick";
+import React, { Component } from 'react';
+import Slider from 'react-slick';
 import VideosContainer from './VideosContainer';
 import novedades1 from '../../assets/Videos/Novedades/novedades1.jfif';
 import novedades2 from '../../assets/Videos/Novedades/novedades2.jfif';
@@ -41,63 +41,67 @@ import mcu11 from '../../assets/Videos/MCU/mcu11.jfif';
 import mcu12 from '../../assets/Videos/MCU/mcu12.jfif';
 
 const videosxd = [
-    [novedades1,novedades2,novedades3,novedades4],
-    [novedades5,novedades6,novedades7,novedades8],
-    [novedades9,novedades10,novedades11,novedades12]];
+  [novedades1, novedades2, novedades3, novedades4],
+  [novedades5, novedades6, novedades7, novedades8],
+  [novedades9, novedades10, novedades11, novedades12]];
 
-const categoriasVideos =[
-    {nombre: 'Novedades en Disney+', 
-    videos:[
-        [novedades1,novedades2,novedades3,novedades4],
-        [novedades5,novedades6,novedades7,novedades8],
-        [novedades9,novedades10,novedades11,novedades12]
-        ]},
-    {nombre: 'Ganadoras de un Óscar', 
-    videos:[
-        [oscar1,oscar2,oscar3,oscar4],
-        [oscar5,oscar6,oscar7,oscar8],
-        [oscar9,oscar10,oscar11,oscar12]]},
-    {nombre: 'Universo Cinematográfico de Marvel', 
-    videos:[
-        [mcu1,mcu2,mcu3,mcu4],
-        [mcu5,mcu6,mcu7,mcu8],
-        [mcu9,mcu10,mcu11,mcu12]]}
+const categoriasVideos = [
+  {
+    nombre: 'Novedades en Disney+',
+    videos: [
+      [novedades1, novedades2, novedades3, novedades4],
+      [novedades5, novedades6, novedades7, novedades8],
+      [novedades9, novedades10, novedades11, novedades12],
+    ],
+  },
+  {
+    nombre: 'Ganadoras de un Óscar',
+    videos: [
+      [oscar1, oscar2, oscar3, oscar4],
+      [oscar5, oscar6, oscar7, oscar8],
+      [oscar9, oscar10, oscar11, oscar12]],
+  },
+  {
+    nombre: 'Universo Cinematográfico de Marvel',
+    videos: [
+      [mcu1, mcu2, mcu3, mcu4],
+      [mcu5, mcu6, mcu7, mcu8],
+      [mcu9, mcu10, mcu11, mcu12]],
+  },
 
-]
+];
 
-export default class SimpleSlider extends Component {
-  render() {
-    const settings = {
-      dots: false,
-      infinite: false,
-      speed: 500,
-      slidesToShow: 1,
-      slidesToScroll: 1
-    };
-    return (
-        <div>
-            {
-                categoriasVideos.map((categoria) =>(
-                    <div>
-                        <div className="contenedor-videos">
-                            <p className='contenedor-videos-font'>{categoria.nombre}</p>
-                            <Slider {...settings}>
-                                {
+export default function SimpleSlider() {
+  const settings = {
+    dots: false,
+    infinite: false,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  };
+  return (
+    <div>
+      {
+                categoriasVideos.map((categoria) => (
+                  <div>
+                    <div className="contenedor-videos">
+                      <p className="contenedor-videos-font">{categoria.nombre}</p>
+                      <Slider {...settings}>
+                        {
                                     categoria.videos.map((lineas) => (
-                                        <div>
-                                            <VideosContainer videos={lineas} />
-                                        </div>
+                                      <div>
+                                        <VideosContainer videos={lineas} />
+                                      </div>
                                     ))
                                 }
 
-                            </Slider>
-                        </div>
+                      </Slider>
                     </div>
+                  </div>
                 ))
             }
-            
-        </div>
-      
-    );
-  }
+
+    </div>
+
+  );
 }
