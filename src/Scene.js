@@ -3,7 +3,7 @@ import './style.scss';
 import NavBar from './components/NavBar';
 import BannerSlider from './components/BannerSlider';
 import CategoryDivision from './components/CategoryDivision/CategoryDivision.js';
-import ContentChooser from './components/ContentChooser/ContentChooser';
+import SimpleSlider from './components/ContentChooser/SimpleSlider';
 
 
 function Scene(){
@@ -14,7 +14,7 @@ function Scene(){
             <main>
             <BannerSlider/>
             <CategoryDivision/>
-            <ContentChooser/>
+            <SimpleSlider/>
             </main>
             
         </div>
