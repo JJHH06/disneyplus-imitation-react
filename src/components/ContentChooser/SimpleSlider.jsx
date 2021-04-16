@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Slider from 'react-slick';
 import VideosContainer from './VideosContainer';
 import novedades1 from '../../assets/Videos/Novedades/novedades1.jfif';
@@ -40,11 +40,6 @@ import mcu10 from '../../assets/Videos/MCU/mcu10.jfif';
 import mcu11 from '../../assets/Videos/MCU/mcu11.jfif';
 import mcu12 from '../../assets/Videos/MCU/mcu12.jfif';
 
-const videosxd = [
-  [novedades1, novedades2, novedades3, novedades4],
-  [novedades5, novedades6, novedades7, novedades8],
-  [novedades9, novedades10, novedades11, novedades12]];
-
 const categoriasVideos = [
   {
     nombre: 'Novedades en Disney+',
@@ -72,13 +67,6 @@ const categoriasVideos = [
 ];
 
 export default function SimpleSlider() {
-  const settings = {
-    dots: false,
-    infinite: false,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-  };
   return (
     <div>
       {
@@ -86,7 +74,7 @@ export default function SimpleSlider() {
                   <div>
                     <div className="contenedor-videos">
                       <p className="contenedor-videos-font">{categoria.nombre}</p>
-                      <Slider {...settings}>
+                      <Slider dots={false} infinite={false} slidesToShow={1} slidesToScroll={1}>
                         {
                                     categoria.videos.map((lineas) => (
                                       <div>
