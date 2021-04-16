@@ -45,4 +45,4 @@ const VideosContainer = () => {
 
 
 
-export default ContentChooser
+export default VideosContainer

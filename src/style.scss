@@ -116,9 +116,7 @@ body {
     border:3px solid #434552;
     background-size: cover;
 }
-.videos-grid{
 
-}
 .contenedor-videos{
     padding-inline: 5%;
     padding-top: 3%;
@@ -133,6 +131,10 @@ body {
     line-height: 1.4;
     color: rgb(249, 249, 249);
     font-weight: bold;
+    margin-bottom: 0 !important;
+}
+.videos-grid{
+    padding-top: 20px !important;
 }
 // .contenedor-carousel-banner{
 //     border: 5px solid transparent;

@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
+import VideosContainer from './VideosContainer';
 
-import CategoryDivision from '../CategoryDivision/CategoryDivision'
 
 export default class SimpleSlider extends Component {
   render() {
@@ -16,22 +16,22 @@ export default class SimpleSlider extends Component {
       <div>
         <Slider {...settings}>
           <div>
-            <CategoryDivision/>
+            <VideosContainer/>
           </div>
           <div>
-          <CategoryDivision/>
+          <VideosContainer/>
           </div>
           <div>
-          <CategoryDivision/>
+          <VideosContainer/>
           </div>
           <div>
-          <CategoryDivision/>
+          <VideosContainer/>
           </div>
           <div>
-            <CategoryDivision/>
+          <VideosContainer/>
           </div>
           <div>
-          <CategoryDivision/>
+          <VideosContainer/>
           </div>
         </Slider>
       </div>
