@@ -46,6 +46,10 @@ body {
     margin-inline: 5%;
 }
 
+.shadowed{
+    box-shadow: 0px 26px 30px 10px #00000081;
+}
+
 .carousel-caption{
     left:0% !important;
     right: 50% !important;
@@ -61,8 +65,82 @@ body {
     --animate-duration: 1.2s !important;
     
 }
+.division1{
+    background-color: azure;
+    height: 100px;
+}
+
+.division2{
+    background-color: blue;
+    height: 100px;
+}
+
+.branches-container{
+    padding-inline: 5% !important;
+    padding-top: 3%;
+}
 
 
+//para las imagenes con gifs de fondo
+
+.highlight-logo{
+    max-width: 100%;
+}
+
+.gif-disney:hover{
+    background-image: url(./assets/Categories/disney-moving-background.gif);
+}
+.gif-pixar:hover{
+    background-image: url(./assets/Categories/pixar-moving-background.gif);
+}
+.gif-marvel:hover{
+    background-image: url(./assets/Categories/marvel-moving-background.gif);
+}
+.gif-starwars:hover{
+    background-image: url(./assets/Categories/starwars-moving-background.gif);
+}
+.gif-natgeo:hover{
+    background-image: url(./assets/Categories/natgeo-moving-background.gif);
+}
+
+
+.gif-branch-container:hover{
+    cursor: pointer;
+    border: 3px solid #D2D8E8;
+    transform: scale(1.09);
+    
+}
+.gif-branch-container{
+    background: linear-gradient(rgb(48, 50, 62), rgb(30, 31, 42));
+    border-radius: 5%;
+    border:3px solid #434552;
+    background-size: cover;
+}
+.videos-grid{
+
+}
+.contenedor-videos{
+    padding-inline: 5%;
+    padding-top: 3%;
+}
+.contenedor-videos-font{
+    cursor: inherit;
+    font-family: Avenir-Heavy, sans-serif;
+    font-size: 20px;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 1.4;
+    color: rgb(249, 249, 249);
+    font-weight: bold;
+}
+// .contenedor-carousel-banner{
+//     border: 5px solid transparent;
+// }
+
+// .contenedor-carousel-banner:hover{
+//     border: 5px solid #D2D8E8;
+// }
 @import "~slick-carousel/slick/slick.css";
 @import "~slick-carousel/slick/slick-theme.css";
 @import "~animate.css/animate.css";

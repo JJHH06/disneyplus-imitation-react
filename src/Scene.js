@@ -1,7 +1,9 @@
 import React from 'react';
 import './style.scss';
-import NavBar from './components/NavBar'
-import SimpleSlider from './components/BannerSlider'
+import NavBar from './components/NavBar';
+import BannerSlider from './components/BannerSlider';
+import CategoryDivision from './components/CategoryDivision/CategoryDivision.js';
+import ContentChooser from './components/ContentChooser/ContentChooser';
 
 
 function Scene(){
@@ -10,7 +12,9 @@ function Scene(){
         <div>
             <NavBar/>
             <main>
-            <SimpleSlider/>
+            <BannerSlider/>
+            <CategoryDivision/>
+            <ContentChooser/>
             </main>
             
         </div>

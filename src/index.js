@@ -1,6 +1,6 @@
 //Colocacion de utilidades
 import "bootstrap/dist/js/bootstrap";
-//import "slick-carousel/slick/slick-theme.scss";
+import "slick-carousel/slick/slick-theme.scss";
 import "./style.scss";
 
 

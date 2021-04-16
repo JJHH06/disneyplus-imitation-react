@@ -5,8 +5,8 @@ import banner2Logo from '../assets/banner2Logo.png';
 import banner2 from '../assets/banner2.jfif';
 import banner3 from '../assets/banner3.jfif';
 import banner3Logo from '../assets/banner3Logo.png';
-const SimpleSlider = () => {
-    return (<div className="initial-banner">
+const BannerSlider = () => {
+    return (<div className="initial-banner contenedor-carousel-banner">
 
 
         <div id="carouselExampleCaptions" className="carousel slide" data-bs-ride="carousel">
@@ -15,7 +15,7 @@ const SimpleSlider = () => {
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
-            <div className="carousel-inner">
+            <div className="carousel-inner shadowed">
                 <div className="carousel-item active">
                     <img src={banner1} className="d-block w-100" alt="..." />
                     <img src={banner1Logo} className="d-block w-100 banner-logo animate__animated animate__fadeInRight" alt="..." />
@@ -49,4 +49,4 @@ const SimpleSlider = () => {
 
     ;
 
-export default SimpleSlider
+export default BannerSlider
