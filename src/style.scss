@@ -1,6 +1,6 @@
 body {
     background-position: center;
-    background-image: url(https://prod-static.disney-plus.net/us-west-2/disneyPlus/app/builds/56a609b9f8106aaed76cd596053f79316378f2e2/node_modules/dss-junglebook/components/themes/images/background.png);
+    background-image: url(./assets/fondo.png);
     background-attachment: fixed;
     background-size: 100%;
 }
@@ -149,7 +149,7 @@ body {
 .video-image{
     max-width: 100%;
     border-radius: 5% !important;
-    border: 3px solid #00000060;
+    border: 3px solid #00000000;
 }
 
 .video-image-container:hover{
@@ -161,9 +161,12 @@ body {
     
 }
 .video-image-container{
-    background: linear-gradient(rgb(48, 50, 62), rgb(30, 31, 42));
     border-radius: 5%;
     background-size: cover;
+}
+
+.videos-grid .row{
+    margin-inline: 0.5% !important;
 }
 
 .page-footer{
@@ -175,7 +178,9 @@ body {
     padding-bottom: 3% !important;
     font: 400 13.3333px Arial;
     color: white;
+    cursor: pointer;
 }
+
 
 .imagen-logo-footer{
     height: 84px;
