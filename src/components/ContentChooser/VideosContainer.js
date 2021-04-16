@@ -9,7 +9,7 @@ const VideosContainer = (props) => {
             {
                     item.videos.map((video) => (
                         <div className="col">
-                            <div className="video-image-container">
+                            <div className="video-image-container shadowed2">
                                 <img src={video} className="video-image" alt="..." />
                             </div>
                         </div>
